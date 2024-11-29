@@ -19,7 +19,7 @@ db = client["Sy_userstories_db"]
 collection = db["stories"]
 collection.create_index("UserStory", unique=True)
 
-api_key = "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"
+api_key = ""
 if not api_key:
     print("API Key is missing! Please set the GROQ_API_KEY environment variable.")
     exit()
