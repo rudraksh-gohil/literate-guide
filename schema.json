@@ -1,0 +1,174 @@
+{
+    "domain": "healthcare",
+    "data": [
+        {
+            "subdomain": "Telemedicine",
+            "app_name": "Prato",
+            "region": "India",
+            "data": [
+                {
+                    "platform": "mobile_iOS",
+                    "software_type": "Frontend",
+                    "features": [
+                        {
+                            "name": "consultation",
+                            "type": "functional",
+                            "quality": [
+                                {
+                                    "type": "high",
+                                    "user_stories": [
+                                        {
+                                            "_id": "1",
+                                            "value": "As a patient in India, I want to have video consultations with doctors using my mobile device (iOS) on the Prato app, so that I can get medical advice without traveling to a clinic.",
+                                            "acceptance_criteria": ["Video call quality should be clear", "Doctor should be able to review patient records during the consultation"],
+                                            "common_bugs": [
+                                                "Video lag during consultation",
+                                                "App freezes when switching between video and chat mode"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "average",
+                                    "user_stories": [
+                                        {
+                                            "_id": "2",
+                                            "value": "As a healthcare provider in India, I want to review patient records and prescriptions during video consultations via the Prato app, so that I can provide informed advice.",
+                                            "acceptance_criteria": ["Doctors can access patient medical history and prescriptions during consultation", "Patient’s health data should be visible in real-time"],
+                                            "common_bugs": [
+                                                "Records are not loading in real-time",
+                                                "Incorrect medication details shown"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "appointment_scheduling",
+                            "type": "functional",
+                            "quality": [
+                                {
+                                    "type": "high",
+                                    "user_stories": [
+                                        {
+                                            "_id": "3",
+                                            "value": "As a patient, I want to book appointments with doctors easily through the Prato app, so that I can get medical consultation when needed.",
+                                            "acceptance_criteria": ["Appointment booking system should be intuitive", "Notifications should be sent to remind users of upcoming appointments"],
+                                            "common_bugs": [
+                                                "Booking system crashes",
+                                                "Appointments not confirmed after booking"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "low",
+                                    "user_stories": [
+                                        {
+                                            "_id": "4",
+                                            "value": "As a user, I want to see available doctors' schedules in real-time, so that I can book an appointment quickly without waiting.",
+                                            "acceptance_criteria": ["Real-time schedule display", "Accurate availability"],
+                                            "common_bugs": [
+                                                "Doctors' availability not updated in real-time",
+                                                "Unable to book appointments due to UI issues"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "prescription_management",
+                            "type": "functional",
+                            "quality": [
+                                {
+                                    "type": "average",
+                                    "user_stories": [
+                                        {
+                                            "_id": "5",
+                                            "value": "As a doctor, I want to prescribe medication through the Prato app, so that my patients can receive their prescriptions digitally and avoid physical paperwork.",
+                                            "acceptance_criteria": ["Prescription should be sent to patient’s app and email", "Prescriptions should be digitally signed and tamper-proof"],
+                                            "common_bugs": [
+                                                "Prescription not appearing in patient’s app",
+                                                "Digital signature not working"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "security_encryption",
+                            "type": "NFR",
+                            "quality": [
+                                {
+                                    "type": "high",
+                                    "user_stories": [
+                                        {
+                                            "_id": "6",
+                                            "value": "As a patient, I want my medical data to be encrypted, so that my personal health information remains secure.",
+                                            "acceptance_criteria": ["Data must be encrypted during transmission", "All sensitive data must be stored securely in the backend"],
+                                            "common_bugs": [
+                                                "Encryption key expiration causes data access issues",
+                                                "Encryption implementation causes delay in app response time"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "low",
+                                    "user_stories": [
+                                        {
+                                            "_id": "7",
+                                            "value": "As a healthcare provider, I want to ensure that my patients' data is secure and not easily accessed by unauthorized persons.",
+                                            "acceptance_criteria": ["Authentication protocols must be secure", "Role-based access should be enforced for healthcare staff"],
+                                            "common_bugs": [
+                                                "Unauthorized access due to weak authentication",
+                                                "Security breach during login process"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "performance_optimization",
+                            "type": "NFR",
+                            "quality": [
+                                {
+                                    "type": "high",
+                                    "user_stories": [
+                                        {
+                                            "_id": "8",
+                                            "value": "As a user, I want the app to load quickly and function smoothly, so that I can receive medical services without delays.",
+                                            "acceptance_criteria": ["App should load within 2 seconds", "Response time for data retrieval should be minimal"],
+                                            "common_bugs": [
+                                                "App crashes on slow networks",
+                                                "Slow response when opening medical records"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "average",
+                                    "user_stories": [
+                                        {
+                                            "_id": "9",
+                                            "value": "As a doctor, I want the app to respond quickly while reviewing patient information, so that I can provide effective consultations without lag.",
+                                            "acceptance_criteria": ["Data should load within 3 seconds", "UI should be responsive even with large data sets"],
+                                            "common_bugs": [
+                                                "Delays when switching between patient records",
+                                                "Sluggish performance during high user activity"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
