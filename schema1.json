@@ -1,0 +1,81 @@
+{
+  "Domain": "string",
+  "Subdomains": {
+    "Subdomain Name": [
+      {
+        "Region": "string",
+        "AppName": "string",
+        "DATA": {
+          "FunctionalRequirements": {
+            "PlatformName": {
+              "frontend": [
+                {
+                  "quality": "string",
+                  "user_story": "string",
+                  "acceptance_criteria": [
+                    "string"
+                  ],
+                  "common_bugs": [
+                    "string"
+                  ]
+                }
+              ],
+              "backend": [
+                {
+                  "quality": "string",
+                  "user_story": "string",
+                  "acceptance_criteria": [
+                    "string"
+                  ],
+                  "common_bugs": [
+                    "string"
+                  ]
+                }
+              ],
+              "middleware": [
+                {
+                  "quality": "string",
+                  "user_story": "string",
+                  "acceptance_criteria": [
+                    "string"
+                  ],
+                  "common_bugs": [
+                    "string"
+                  ]
+                }
+              ]
+            }
+          },
+          "NonFunctionalRequirements": {
+            "PlatformName": {
+              "frontend": [
+                {
+                  "quality": "string",
+                  "user_story": "string",
+                  "acceptance_criteria": [
+                    "string"
+                  ],
+                  "common_bugs": [
+                    "string"
+                  ]
+                }
+              ],
+              "backend": [
+                {
+                  "quality": "string",
+                  "user_story": "string",
+                  "acceptance_criteria": [
+                    "string"
+                  ],
+                  "common_bugs": [
+                    "string"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}
