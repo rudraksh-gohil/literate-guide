@@ -9,44 +9,28 @@
           "Apps": [
             {
               "App Name": "string",
-              "Platforms": [
-                {
-                  "Platform Name": "string",
-                  "Software Types": [
-                    {
-                      "Software Type": "string",
-                      "Requirements": {
-                        "Functional": [
-                          {
-                            "Feature Name": ["string"],
-                            "User Stories": [
-                              {
-                                "Quality": "string",
-                                "User Story": "string",
-                                "Acceptance Criteria": ["string"],
-                                "Common Bugs": ["string"]
-                              }
-                            ]
-                          }
-                        ],
-                        "Non-Functional": [
-                          {
-                            "Feature Name": ["string"],
-                            "User Stories": [
-                              {
-                                "Quality": "string",
-                                "User Story": "string",
-                                "Acceptance Criteria": ["string"],
-                                "Common Bugs": ["string"]
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    }
-                  ]
-                }
-              ]
+              "Platform": "string",
+              "Software Type": "string",
+              "Requirements": {
+                "Functional": [
+                  {
+                    "Feature Name": "string",
+                    "Quality": "string",
+                    "User Story": "string",
+                    "Acceptance Criteria": ["string"],
+                    "Common Bugs": ["string"]
+                  }
+                ],
+                "Non-Functional": [
+                  {
+                    "Feature Name": "string",
+                    "Quality": "string",
+                    "User Story": "string",
+                    "Acceptance Criteria": ["string"],
+                    "Common Bugs": ["string"]
+                  }
+                ]
+              }
             }
           ]
         }
