@@ -1,0 +1,61 @@
+{
+  "Domain": "string",
+  "Subdomains": [
+    {
+      "Subdomain Name": "string",
+      "Regions": [
+        {
+          "Region": "string",
+          "Functional Requirements": {
+            "platform_name": {
+              "frontend": [
+                {
+                  "quality": "string",
+                  "user_story": "string",
+                  "acceptance_criteria": ["string"],
+                  "common_bugs": ["string"]
+                }
+              ],
+              "backend": [
+                {
+                  "quality": "string",
+                  "user_story": "string",
+                  "acceptance_criteria": ["string"],
+                  "common_bugs": ["string"]
+                }
+              ],
+              "middleware": [
+                {
+                  "quality": "string",
+                  "user_story": "string",
+                  "acceptance_criteria": ["string"],
+                  "common_bugs": ["string"]
+                }
+              ]
+            }
+          },
+          "Non-Functional Requirements": {
+            "platform_name": {
+              "frontend": [
+                {
+                  "quality": "string",
+                  "user_story": "string",
+                  "acceptance_criteria": ["string"],
+                  "common_bugs": ["string"]
+                }
+              ],
+              "backend": [
+                {
+                  "quality": "string",
+                  "user_story": "string",
+                  "acceptance_criteria": ["string"],
+                  "common_bugs": ["string"]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
