@@ -6,56 +6,57 @@
       "Regions": [
         {
           "Region": "string",
-          "Apps": [
+          "Functional Requirements": [
             {
-              "App Name": "string",
-              "Functional Requirements": {
-                "platform_name": {
-                  "frontend": [
-                    {
-                      "quality": "string",
-                      "user_story": "string",
-                      "acceptance_criteria": ["string"],
-                      "common_bugs": ["string"]
-                    }
-                  ],
-                  "backend": [
-                    {
-                      "quality": "string",
-                      "user_story": "string",
-                      "acceptance_criteria": ["string"],
-                      "common_bugs": ["string"]
-                    }
-                  ],
-                  "middleware": [
-                    {
-                      "quality": "string",
-                      "user_story": "string",
-                      "acceptance_criteria": ["string"],
-                      "common_bugs": ["string"]
-                    }
-                  ]
-                }
-              },
-              "Non-Functional Requirements": {
-                "platform_name": {
-                  "frontend": [
-                    {
-                      "quality": "string",
-                      "user_story": "string",
-                      "acceptance_criteria": ["string"],
-                      "common_bugs": ["string"]
-                    }
-                  ],
-                  "backend": [
-                    {
-                      "quality": "string",
-                      "user_story": "string",
-                      "acceptance_criteria": ["string"],
-                      "common_bugs": ["string"]
-                    }
-                  ]
-                }
+              "Feature Name": "string",
+              "platform_name": {
+                "frontend": [
+                  {
+                    "quality": "string",
+                    "user_story": "string",
+                    "acceptance_criteria": ["string"],
+                    "common_bugs": ["string"]
+                  }
+                ],
+                "backend": [
+                  {
+                    "quality": "string",
+                    "user_story": "string",
+                    "acceptance_criteria": ["string"],
+                    "common_bugs": ["string"]
+                  }
+                ],
+                "middleware": [
+                  {
+                    "quality": "string",
+                    "user_story": "string",
+                    "acceptance_criteria": ["string"],
+                    "common_bugs": ["string"]
+                  }
+                ]
+              }
+            }
+          ],
+          "Non-Functional Requirements": [
+            {
+              "Feature Name": "string",
+              "platform_name": {
+                "frontend": [
+                  {
+                    "quality": "string",
+                    "user_story": "string",
+                    "acceptance_criteria": ["string"],
+                    "common_bugs": ["string"]
+                  }
+                ],
+                "backend": [
+                  {
+                    "quality": "string",
+                    "user_story": "string",
+                    "acceptance_criteria": ["string"],
+                    "common_bugs": ["string"]
+                  }
+                ]
               }
             }
           ]
