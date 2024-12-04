@@ -6,39 +6,45 @@
       "Regions": [
         {
           "Region": "string",
-          "Platforms": [
+          "Apps": [
             {
-              "Platform Name": "string",
-              "Software Types": [
+              "App Name": "string",
+              "Platforms": [
                 {
-                  "Software Type": "string",
-                  "Requirements": {
-                    "Functional": [
-                      {
-                        "Feature Name": ["String"],
-                        "User Stories": [
+                  "Platform Name": "string",
+                  "Software Types": [
+                    {
+                      "Software Type": "string",
+                      "Requirements": {
+                        "Functional": [
                           {
-                            "Quality": "String"
-                            "User Story": "string",
-                            "Acceptance Criteria": ["string"],
-                            "Common Bugs": ["string"]
+                            "Feature Name": ["string"],
+                            "User Stories": [
+                              {
+                                "Quality": "string",
+                                "User Story": "string",
+                                "Acceptance Criteria": ["string"],
+                                "Common Bugs": ["string"]
+                              }
+                            ]
+                          }
+                        ],
+                        "Non-Functional": [
+                          {
+                            "Feature Name": ["string"],
+                            "User Stories": [
+                              {
+                                "Quality": "string",
+                                "User Story": "string",
+                                "Acceptance Criteria": ["string"],
+                                "Common Bugs": ["string"]
+                              }
+                            ]
                           }
                         ]
                       }
-                    ],
-                    "Non-Functional": [
-                      {
-                        "Feature Name": "string",
-                        "User Stories": [
-                          {
-                            "User Story": "string",
-                            "Acceptance Criteria": ["string"],
-                            "Common Bugs": ["string"]
-                          }
-                        ]
-                      }
-                    ]
-                  }
+                    }
+                  ]
                 }
               ]
             }
