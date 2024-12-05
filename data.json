@@ -64,28 +64,48 @@
                             ]
                           },
                           {
-                            "Feature Name": [
-                              "Appointment Booking",
-                              "Video Consultation"
-                            ],
+                            "Feature Name": "Push Notifications",
                             "User Stories": [
                               {
                                 "Quality": "High",
-                                "User Story": "As a user, I want to book an appointment and have a seamless video consultation, so that I can access healthcare services remotely and efficiently.",
-                                "Acceptance Criteria": ["User can book appointments", "Video consultation starts as scheduled", "Both functionalities work together seamlessly"],
-                                "Common Bugs": ["Appointment not linked with video consultation", "Call drops after appointment booking"]
+                                "User Story": "As a user, I want to receive push notifications about appointment reminders and health updates so that I stay informed and on track with my healthcare schedule.",
+                                "Acceptance Criteria": ["User receives timely push notifications", "Notifications are relevant and contextual"],
+                                "Common Bugs": ["Missed push notifications", "Incorrect content in notifications"]
                               },
                               {
                                 "Quality": "Average",
-                                "User Story": "As a user, I want to book an appointment and attend a video consultation, so that I can get medical help from home.",
-                                "Acceptance Criteria": ["User successfully books an appointment", "Video consultation starts within 5 minutes of scheduled time"],
-                                "Common Bugs": ["Appointment not shown correctly in user history", "Video consultation does not start promptly"]
+                                "User Story": "As a user, I want to receive push notifications regarding important updates such as appointment reminders.",
+                                "Acceptance Criteria": ["User receives push notifications at a reasonable time", "Notifications are easy to dismiss"],
+                                "Common Bugs": ["Notifications delayed", "User unable to dismiss notifications"]
                               },
                               {
                                 "Quality": "Low",
-                                "User Story": "As a user, I want to book and attend a consultation.",
-                                "Acceptance Criteria": ["Appointments can be booked", "Consultation happens without major issues"],
-                                "Common Bugs": ["Booking fails", "Video connection drops"]
+                                "User Story": "As a user, I want to receive notifications.",
+                                "Acceptance Criteria": ["User gets notifications"],
+                                "Common Bugs": ["Notifications not appearing"]
+                              }
+                            ]
+                          },
+                          {
+                            "Feature Name": "User Profile Management",
+                            "User Stories": [
+                              {
+                                "Quality": "High",
+                                "User Story": "As a user, I want to manage my profile information such as contact details and medical history so that I can keep my data up to date.",
+                                "Acceptance Criteria": ["User can update profile data", "Changes are saved correctly"],
+                                "Common Bugs": ["Profile data not updating", "Data sync failure"]
+                              },
+                              {
+                                "Quality": "Average",
+                                "User Story": "As a user, I want to update my profile with my latest contact and health information.",
+                                "Acceptance Criteria": ["User can easily navigate to the profile section", "Profile data updates successfully"],
+                                "Common Bugs": ["Unable to save changes", "Profile updates not reflecting immediately"]
+                              },
+                              {
+                                "Quality": "Low",
+                                "User Story": "As a user, I want to update my profile.",
+                                "Acceptance Criteria": ["User profile updates"],
+                                "Common Bugs": ["Unable to update contact information"]
                               }
                             ]
                           }
@@ -115,48 +135,126 @@
                             ]
                           },
                           {
-                            "Feature Name": "System Availability",
+                            "Feature Name": "Offline Mode",
                             "User Stories": [
                               {
                                 "Quality": "High",
-                                "User Story": "As a user, I expect the app to be available at least 99% of the time, so I can use it whenever needed for medical assistance.",
-                                "Acceptance Criteria": ["App availability is 99% or higher", "Scheduled downtime is communicated to users"],
-                                "Common Bugs": ["App crashes during peak hours", "App not available during scheduled maintenance"]
+                                "User Story": "As a user, I want to be able to use essential app features offline, so that I can access my data and schedule even without an internet connection.",
+                                "Acceptance Criteria": ["Critical features are available offline", "Offline data syncs correctly when connected to the internet"],
+                                "Common Bugs": ["Offline mode not functioning", "Sync fails when reconnecting to the internet"]
                               },
                               {
                                 "Quality": "Average",
-                                "User Story": "As a user, I want the app to be available most of the time, so that I can access the service without frequent interruptions.",
-                                "Acceptance Criteria": ["App downtime is minimized", "Maintenance periods are announced in advance"],
-                                "Common Bugs": ["Unplanned downtime", "App unavailable for long periods"]
+                                "User Story": "As a user, I want to access certain features of the app even without internet access.",
+                                "Acceptance Criteria": ["Offline mode works for viewing basic data", "User can access scheduled appointments offline"],
+                                "Common Bugs": ["Offline mode inconsistencies", "Data syncing issues"]
                               },
                               {
                                 "Quality": "Low",
-                                "User Story": "As a user, I need the app to work most of the time.",
-                                "Acceptance Criteria": ["App availability is adequate for regular use"],
-                                "Common Bugs": ["App intermittently unavailable", "Frequent connectivity issues"]
+                                "User Story": "As a user, I want the app to work offline.",
+                                "Acceptance Criteria": ["Offline access to basic features"],
+                                "Common Bugs": ["Offline mode not functional"]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "Software Type": "Backend",
+                      "Requirements": {
+                        "Functional": [
+                          {
+                            "Feature Name": "Appointment Scheduling API",
+                            "User Stories": [
+                              {
+                                "Quality": "High",
+                                "User Story": "As a backend developer, I want to implement an API to handle appointment scheduling so that users can book appointments through the mobile app.",
+                                "Acceptance Criteria": ["API correctly stores appointment data", "API returns success status when appointments are booked"],
+                                "Common Bugs": ["API returns incorrect status", "Data not stored correctly"]
+                              },
+                              {
+                                "Quality": "Average",
+                                "User Story": "As a backend developer, I want to ensure that the API is able to process booking requests without major delays.",
+                                "Acceptance Criteria": ["API responds within 2 seconds", "Requests are processed and stored correctly"],
+                                "Common Bugs": ["API response time exceeds 2 seconds", "Data storage errors"]
+                              },
+                              {
+                                "Quality": "Low",
+                                "User Story": "As a backend developer, I want to make sure the appointment booking API works.",
+                                "Acceptance Criteria": ["API processes requests correctly"],
+                                "Common Bugs": ["API fails to respond"]
                               }
                             ]
                           },
                           {
-                            "Feature Name": "Data Encryption",
+                            "Feature Name": "Video Call API",
                             "User Stories": [
                               {
                                 "Quality": "High",
-                                "User Story": "As a user, I want my health data to be encrypted so that it remains secure and protected from unauthorized access.",
-                                "Acceptance Criteria": ["All sensitive data is encrypted", "Encryption follows industry standards like HIPAA"],
-                                "Common Bugs": ["Encryption fails", "Sensitive data exposed"]
+                                "User Story": "As a backend developer, I want to build a video call API that integrates with the mobile app so that users can attend consultations through video.",
+                                "Acceptance Criteria": ["API successfully initiates video calls", "API integrates seamlessly with frontend app"],
+                                "Common Bugs": ["API does not connect video calls", "Frontend integration issues"]
                               },
                               {
                                 "Quality": "Average",
-                                "User Story": "As a user, I expect my data to be encrypted to prevent unauthorized access and ensure privacy.",
-                                "Acceptance Criteria": ["Encryption is enabled for all personal data", "Data remains secure during transmission"],
-                                "Common Bugs": ["Encryption not applied to all data", "Data leakage during transmission"]
+                                "User Story": "As a backend developer, I want to ensure that the video call API handles multiple simultaneous calls without crashing.",
+                                "Acceptance Criteria": ["API supports multiple video calls", "No crashes during peak load"],
+                                "Common Bugs": ["API crashes under load", "Lag issues during calls"]
                               },
                               {
                                 "Quality": "Low",
-                                "User Story": "As a user, I want my data to be encrypted.",
-                                "Acceptance Criteria": ["Encryption works for user data"],
-                                "Common Bugs": ["Encryption errors"]
+                                "User Story": "As a backend developer, I want the video call API to work.",
+                                "Acceptance Criteria": ["API connects video calls successfully"],
+                                "Common Bugs": ["API fails to connect video calls"]
+                              }
+                            ]
+                          }
+                        ],
+                        "Non-Functional": [
+                          {
+                            "Feature Name": "Database Scalability",
+                            "User Stories": [
+                              {
+                                "Quality": "High",
+                                "User Story": "As a backend developer, I want the database to scale seamlessly as the number of users grows so that the app remains responsive.",
+                                "Acceptance Criteria": ["Database scales automatically", "No performance degradation under high load"],
+                                "Common Bugs": ["Database slows down under load", "Unable to scale database"]
+                              },
+                              {
+                                "Quality": "Average",
+                                "User Story": "As a backend developer, I want the database to handle moderate traffic efficiently.",
+                                "Acceptance Criteria": ["Database handles moderate load without issues", "Performance is acceptable under normal usage"],
+                                "Common Bugs": ["Database performance drops under moderate load"]
+                              },
+                              {
+                                "Quality": "Low",
+                                "User Story": "As a backend developer, I want the database to function.",
+                                "Acceptance Criteria": ["Database works without downtime"],
+                                "Common Bugs": ["Database crashes"]
+                              }
+                            ]
+                          },
+                          {
+                            "Feature Name": "Data Backup and Recovery",
+                            "User Stories": [
+                              {
+                                "Quality": "High",
+                                "User Story": "As a backend developer, I want to implement a reliable backup and recovery system for the app’s data to prevent loss of user information in case of system failure.",
+                                "Acceptance Criteria": ["Regular backups are taken", "Data recovery is efficient and reliable"],
+                                "Common Bugs": ["Backup fails", "Data loss during recovery"]
+                              },
+                              {
+                                "Quality": "Average",
+                                "User Story": "As a backend developer, I want the app’s data to be regularly backed up and recoverable if needed.",
+                                "Acceptance Criteria": ["Backup is completed on schedule", "Recovery is successful under normal conditions"],
+                                "Common Bugs": ["Backup delays", "Recovery issues"]
+                              },
+                              {
+                                "Quality": "Low",
+                                "User Story": "As a backend developer, I want the app's data to be safe.",
+                                "Acceptance Criteria": ["Backup system operational"],
+                                "Common Bugs": ["Backup fails sporadically"]
                               }
                             ]
                           }
