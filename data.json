@@ -1,0 +1,117 @@
+{
+  "Domain": "Healthcare",
+  "Subdomains": [
+    {
+      "Subdomain Name": "Telemedicine",
+      "Regions": [
+        {
+          "Region": "USA",
+          "Apps": [
+            {
+              "App Name": "Teladoc Health",
+              "Platforms": [
+                {
+                  "Platform Name": "Mobile",
+                  "Software Types": [
+                    {
+                      "Software Type": "Frontend",
+                      "Requirements": {
+                        "Functional": [
+                          {
+                            "Feature Name": "Appointment Booking",
+                            "User Stories": [
+                              {
+                                "Quality": "High",
+                                "User Story": "As a user, I want to book an appointment so that I can get timely medical consultation.",
+                                "Acceptance Criteria": ["User can select appointment date", "User can choose doctor from list", "Confirmation message appears after booking"],
+                                "Common Bugs": ["Booking confirmation not received", "Date selection error"]
+                              }
+                            ]
+                          },
+                          {
+                            "Feature Name": "Video Consultation",
+                            "User Stories": [
+                              {
+                                "Quality": "Average",
+                                "User Story": "As a user, I want to have a video consultation with my doctor so that I can receive medical advice remotely.",
+                                "Acceptance Criteria": ["Video call connects without delay", "Audio and video are clear", "User can end the call when done"],
+                                "Common Bugs": ["Video call fails to start", "Poor audio quality", "Call drops unexpectedly"]
+                              }
+                            ]
+                          },
+                          {
+                            "Feature Name": [
+                              "Appointment Booking",
+                              "Video Consultation"
+                            ],
+                            "User Stories": [
+                              {
+                                "Quality": "Low",
+                                "User Story": "As a user, I want to book an appointment and attend a video consultation, so that I can receive medical assistance remotely and on time.",
+                                "Acceptance Criteria": ["User can book an appointment", "Video consultation starts on time", "Both functionalities work seamlessly together"],
+                                "Common Bugs": ["Appointment not linked with video consultation", "Video consultation fails after booking"]
+                              }
+                            ]
+                          },
+                          {
+                            "Feature Name": [
+                              "Appointment Booking",
+                              "Health Record Tracking"
+                            ],
+                            "User Stories": [
+                              {
+                                "Quality": "High",
+                                "User Story": "As a user, I want to book an appointment and track my health records, so that I can monitor my progress and receive timely medical consultations.",
+                                "Acceptance Criteria": ["User can book an appointment", "User can track health records before or after appointments", "Appointment is recorded in health history"],
+                                "Common Bugs": ["Health record not saving after appointment", "Data mismatch between appointments and records"]
+                              }
+                            ]
+                          }
+                        ],
+                        "Non-Functional": [
+                          {
+                            "Feature Name": "App Load Time",
+                            "User Stories": [
+                              {
+                                "Quality": "High",
+                                "User Story": "As a user, I want the app to load in less than 3 seconds so that I can start using it without delay.",
+                                "Acceptance Criteria": ["App loads under 3 seconds", "UI loads without freezing"],
+                                "Common Bugs": ["App takes more than 3 seconds", "UI freezes on load"]
+                              }
+                            ]
+                          },
+                          {
+                            "Feature Name": "Data Encryption",
+                            "User Stories": [
+                              {
+                                "Quality": "Average",
+                                "User Story": "As a user, I want my health data to be encrypted so that my personal information is protected.",
+                                "Acceptance Criteria": ["All health records are encrypted at rest and during transmission", "Data encryption adheres to HIPAA standards"],
+                                "Common Bugs": ["Data encryption not applied correctly", "Sensitive information exposed during transmission"]
+                              }
+                            ]
+                          },
+                          {
+                            "Feature Name": "System Availability",
+                            "User Stories": [
+                              {
+                                "Quality": "Low",
+                                "User Story": "As a user, I expect the app to be available most of the time.",
+                                "Acceptance Criteria": ["App availability is 99% or higher", "Downtime is scheduled during off-peak hours"],
+                                "Common Bugs": ["Intermittent downtime", "App becomes unavailable sporadically"]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
