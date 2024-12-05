@@ -22,9 +22,21 @@
                             "User Stories": [
                               {
                                 "Quality": "High",
-                                "User Story": "As a user, I want to book an appointment so that I can get timely medical consultation.",
-                                "Acceptance Criteria": ["User can select appointment date", "User can choose doctor from list", "Confirmation message appears after booking"],
-                                "Common Bugs": ["Booking confirmation not received", "Date selection error"]
+                                "User Story": "As a user, I want to book an appointment through the app so that I can easily schedule a consultation with my healthcare provider at a time that works for me.",
+                                "Acceptance Criteria": ["User can select a date", "User can choose the doctor", "Confirmation is shown after booking"],
+                                "Common Bugs": ["Booking confirmation fails", "Date unavailable bug"]
+                              },
+                              {
+                                "Quality": "Average",
+                                "User Story": "As a user, I want to book an appointment so that I can consult with a healthcare provider remotely.",
+                                "Acceptance Criteria": ["User selects available slots", "Confirmation is shown with appointment details"],
+                                "Common Bugs": ["Confirmation not shown", "System not showing available slots"]
+                              },
+                              {
+                                "Quality": "Low",
+                                "User Story": "As a user, I want to schedule an appointment.",
+                                "Acceptance Criteria": ["Appointment scheduled successfully"],
+                                "Common Bugs": ["Appointment not booked"]
                               }
                             ]
                           },
@@ -32,10 +44,22 @@
                             "Feature Name": "Video Consultation",
                             "User Stories": [
                               {
+                                "Quality": "High",
+                                "User Story": "As a user, I want to have a video consultation with my healthcare provider so that I can receive medical advice without leaving home.",
+                                "Acceptance Criteria": ["Video call connects within 5 seconds", "Audio and video are clear", "User can end the call once the consultation is complete"],
+                                "Common Bugs": ["Video call fails to start", "Poor audio quality"]
+                              },
+                              {
                                 "Quality": "Average",
-                                "User Story": "As a user, I want to have a video consultation with my doctor so that I can receive medical advice remotely.",
-                                "Acceptance Criteria": ["Video call connects without delay", "Audio and video are clear", "User can end the call when done"],
-                                "Common Bugs": ["Video call fails to start", "Poor audio quality", "Call drops unexpectedly"]
+                                "User Story": "As a user, I want a reliable video consultation feature so that I can interact with the doctor without issues.",
+                                "Acceptance Criteria": ["Video consultation starts with a delay no longer than 10 seconds", "Audio quality is decent", "Call can be ended easily"],
+                                "Common Bugs": ["Delay in starting the call", "Audio quality drops occasionally"]
+                              },
+                              {
+                                "Quality": "Low",
+                                "User Story": "As a user, I want to consult via video call.",
+                                "Acceptance Criteria": ["Video call starts", "User can hear and see the doctor"],
+                                "Common Bugs": ["Audio not working", "Video freezing"]
                               }
                             ]
                           },
@@ -46,24 +70,22 @@
                             ],
                             "User Stories": [
                               {
-                                "Quality": "Low",
-                                "User Story": "As a user, I want to book an appointment and attend a video consultation, so that I can receive medical assistance remotely and on time.",
-                                "Acceptance Criteria": ["User can book an appointment", "Video consultation starts on time", "Both functionalities work seamlessly together"],
-                                "Common Bugs": ["Appointment not linked with video consultation", "Video consultation fails after booking"]
-                              }
-                            ]
-                          },
-                          {
-                            "Feature Name": [
-                              "Appointment Booking",
-                              "Health Record Tracking"
-                            ],
-                            "User Stories": [
-                              {
                                 "Quality": "High",
-                                "User Story": "As a user, I want to book an appointment and track my health records, so that I can monitor my progress and receive timely medical consultations.",
-                                "Acceptance Criteria": ["User can book an appointment", "User can track health records before or after appointments", "Appointment is recorded in health history"],
-                                "Common Bugs": ["Health record not saving after appointment", "Data mismatch between appointments and records"]
+                                "User Story": "As a user, I want to book an appointment and have a seamless video consultation, so that I can access healthcare services remotely and efficiently.",
+                                "Acceptance Criteria": ["User can book appointments", "Video consultation starts as scheduled", "Both functionalities work together seamlessly"],
+                                "Common Bugs": ["Appointment not linked with video consultation", "Call drops after appointment booking"]
+                              },
+                              {
+                                "Quality": "Average",
+                                "User Story": "As a user, I want to book an appointment and attend a video consultation, so that I can get medical help from home.",
+                                "Acceptance Criteria": ["User successfully books an appointment", "Video consultation starts within 5 minutes of scheduled time"],
+                                "Common Bugs": ["Appointment not shown correctly in user history", "Video consultation does not start promptly"]
+                              },
+                              {
+                                "Quality": "Low",
+                                "User Story": "As a user, I want to book and attend a consultation.",
+                                "Acceptance Criteria": ["Appointments can be booked", "Consultation happens without major issues"],
+                                "Common Bugs": ["Booking fails", "Video connection drops"]
                               }
                             ]
                           }
@@ -74,20 +96,21 @@
                             "User Stories": [
                               {
                                 "Quality": "High",
-                                "User Story": "As a user, I want the app to load in less than 3 seconds so that I can start using it without delay.",
-                                "Acceptance Criteria": ["App loads under 3 seconds", "UI loads without freezing"],
-                                "Common Bugs": ["App takes more than 3 seconds", "UI freezes on load"]
-                              }
-                            ]
-                          },
-                          {
-                            "Feature Name": "Data Encryption",
-                            "User Stories": [
+                                "User Story": "As a user, I want the app to load in under 3 seconds so that I can start using the app immediately without delay.",
+                                "Acceptance Criteria": ["App loads within 3 seconds", "UI appears without lag"],
+                                "Common Bugs": ["App loading time exceeds 3 seconds", "UI freezes during load"]
+                              },
                               {
                                 "Quality": "Average",
-                                "User Story": "As a user, I want my health data to be encrypted so that my personal information is protected.",
-                                "Acceptance Criteria": ["All health records are encrypted at rest and during transmission", "Data encryption adheres to HIPAA standards"],
-                                "Common Bugs": ["Data encryption not applied correctly", "Sensitive information exposed during transmission"]
+                                "User Story": "As a user, I expect the app to load quickly, so that I don’t have to wait long before using it.",
+                                "Acceptance Criteria": ["App loads in 3-5 seconds", "UI responds without noticeable delays"],
+                                "Common Bugs": ["App loading time is inconsistent", "UI has slight delay"]
+                              },
+                              {
+                                "Quality": "Low",
+                                "User Story": "As a user, I want the app to open without long wait times.",
+                                "Acceptance Criteria": ["App opens within 6 seconds"],
+                                "Common Bugs": ["App takes more than 6 seconds to load"]
                               }
                             ]
                           },
@@ -95,10 +118,45 @@
                             "Feature Name": "System Availability",
                             "User Stories": [
                               {
+                                "Quality": "High",
+                                "User Story": "As a user, I expect the app to be available at least 99% of the time, so I can use it whenever needed for medical assistance.",
+                                "Acceptance Criteria": ["App availability is 99% or higher", "Scheduled downtime is communicated to users"],
+                                "Common Bugs": ["App crashes during peak hours", "App not available during scheduled maintenance"]
+                              },
+                              {
+                                "Quality": "Average",
+                                "User Story": "As a user, I want the app to be available most of the time, so that I can access the service without frequent interruptions.",
+                                "Acceptance Criteria": ["App downtime is minimized", "Maintenance periods are announced in advance"],
+                                "Common Bugs": ["Unplanned downtime", "App unavailable for long periods"]
+                              },
+                              {
                                 "Quality": "Low",
-                                "User Story": "As a user, I expect the app to be available most of the time.",
-                                "Acceptance Criteria": ["App availability is 99% or higher", "Downtime is scheduled during off-peak hours"],
-                                "Common Bugs": ["Intermittent downtime", "App becomes unavailable sporadically"]
+                                "User Story": "As a user, I need the app to work most of the time.",
+                                "Acceptance Criteria": ["App availability is adequate for regular use"],
+                                "Common Bugs": ["App intermittently unavailable", "Frequent connectivity issues"]
+                              }
+                            ]
+                          },
+                          {
+                            "Feature Name": "Data Encryption",
+                            "User Stories": [
+                              {
+                                "Quality": "High",
+                                "User Story": "As a user, I want my health data to be encrypted so that it remains secure and protected from unauthorized access.",
+                                "Acceptance Criteria": ["All sensitive data is encrypted", "Encryption follows industry standards like HIPAA"],
+                                "Common Bugs": ["Encryption fails", "Sensitive data exposed"]
+                              },
+                              {
+                                "Quality": "Average",
+                                "User Story": "As a user, I expect my data to be encrypted to prevent unauthorized access and ensure privacy.",
+                                "Acceptance Criteria": ["Encryption is enabled for all personal data", "Data remains secure during transmission"],
+                                "Common Bugs": ["Encryption not applied to all data", "Data leakage during transmission"]
+                              },
+                              {
+                                "Quality": "Low",
+                                "User Story": "As a user, I want my data to be encrypted.",
+                                "Acceptance Criteria": ["Encryption works for user data"],
+                                "Common Bugs": ["Encryption errors"]
                               }
                             ]
                           }
