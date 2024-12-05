@@ -1,0 +1,575 @@
+{
+  "_id": { "$oid": "6751741e86716811fd23dd41" },
+  "Domain": "Healthcare",
+  "Subdomains": [
+    {
+      "Subdomain Name": "Telemedicine",
+      "Regions": [
+        {
+          "Region": "USA",
+          "Apps": [
+            {
+              "App Name": "Teladoc Health",
+              "Platforms": [
+                {
+                  "Platform Name": "Mobile",
+                  "Software Types": [
+                    {
+                      "Software Type": "Frontend",
+                      "Requirements": {
+                        "Functional": [
+                          {
+                            "Feature Name": [
+                              "Appointment Booking",
+                              "Video Consultation",
+                              "Prescription Management"
+                            ],
+                            "User Stories": [
+                              {
+                                "Quality": "high",
+                                "User Story": "As a patient, I want to book an appointment with a doctor so that I can receive timely care.",
+                                "Acceptance Criteria": [
+                                  "Appointments can be scheduled without errors",
+                                  "User receives confirmation notifications"
+                                ],
+                                "Common Bugs": [
+                                  "Appointment booking fails intermittently",
+                                  "Notifications not sent on time"
+                                ]
+                              },
+                              {
+                                "Quality": "average",
+                                "User Story": "As a patient, I want to be able to easily find available doctors so that I can make quick appointments.",
+                                "Acceptance Criteria": [
+                                  "User can find doctors available for appointments",
+                                  "Search results are accurate"
+                                ],
+                                "Common Bugs": [
+                                  "Search results sometimes show unavailable doctors",
+                                  "Appointments not appearing for selected times"
+                                ]
+                              },
+                              {
+                                "Quality": "low",
+                                "User Story": "As a patient, I want a simple way to manage my appointments.",
+                                "Acceptance Criteria": [
+                                  "Appointments can be managed easily",
+                                  "Users can cancel or reschedule"
+                                ],
+                                "Common Bugs": [
+                                  "Difficult to navigate appointment options",
+                                  "App crashes while managing appointments"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "Non-Functional": [
+                          {
+                            "Feature Name": [
+                              "App Load Time",
+                              "UI Responsiveness"
+                            ],
+                            "User Stories": [
+                              {
+                                "Quality": "high",
+                                "User Story": "As a user, I want the app to load in under 2 seconds so that I can start using it quickly.",
+                                "Acceptance Criteria": [
+                                  "App loads within 2 seconds on all devices"
+                                ],
+                                "Common Bugs": [
+                                  "App load times exceed 2 seconds on older devices"
+                                ]
+                              },
+                              {
+                                "Quality": "average",
+                                "User Story": "As a user, I want the UI to respond smoothly to my actions.",
+                                "Acceptance Criteria": [
+                                  "UI responds to touch interactions without noticeable lag"
+                                ],
+                                "Common Bugs": [
+                                  "UI is slow to respond during heavy use"
+                                ]
+                              },
+                              {
+                                "Quality": "low",
+                                "User Story": "As a user, I want quick loading times to avoid waiting.",
+                                "Acceptance Criteria": [
+                                  "App loads without significant delay"
+                                ],
+                                "Common Bugs": [
+                                  "App freezes during loading"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "Software Type": "Backend",
+                      "Requirements": {
+                        "Functional": [
+                          {
+                            "Feature Name": [
+                              "Real-Time Sync",
+                              "Scheduling Integration",
+                              "Secure Authentication"
+                            ],
+                            "User Stories": [
+                              {
+                                "Quality": "high",
+                                "User Story": "As a patient, I want my appointments and health data to sync in real-time so that I can get updated information.",
+                                "Acceptance Criteria": [
+                                  "Sync works seamlessly in real-time",
+                                  "No delay in showing appointment updates"
+                                ],
+                                "Common Bugs": [
+                                  "Real-time sync fails intermittently",
+                                  "Data lag during heavy traffic"
+                                ]
+                              },
+                              {
+                                "Quality": "average",
+                                "User Story": "As a patient, I want my data to update as soon as changes are made so that I always have the latest information.",
+                                "Acceptance Criteria": [
+                                  "Data sync happens promptly",
+                                  "Changes are reflected in real-time"
+                                ],
+                                "Common Bugs": [
+                                  "Sync delays on heavy load",
+                                  "Minor inconsistencies between devices"
+                                ]
+                              },
+                              {
+                                "Quality": "low",
+                                "User Story": "As a patient, I expect updates to my data without delay.",
+                                "Acceptance Criteria": [
+                                  "Data updates occur with minimal delay"
+                                ],
+                                "Common Bugs": [
+                                  "Sync fails during peak times"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "Non-Functional": [
+                          {
+                            "Feature Name": [
+                              "Scalability",
+                              "Data Encryption"
+                            ],
+                            "User Stories": [
+                              {
+                                "Quality": "high",
+                                "User Story": "As a user, I want the system to handle a large number of requests without degrading performance.",
+                                "Acceptance Criteria": [
+                                  "System should scale without significant performance loss"
+                                ],
+                                "Common Bugs": [
+                                  "Server overload during peak traffic",
+                                  "Slow performance when syncing large data sets"
+                                ]
+                              },
+                              {
+                                "Quality": "average",
+                                "User Story": "As a user, I want the system to handle a moderate load with no performance issues.",
+                                "Acceptance Criteria": [
+                                  "Moderate load results in acceptable performance"
+                                ],
+                                "Common Bugs": [
+                                  "Performance lag on medium-load days"
+                                ]
+                              },
+                              {
+                                "Quality": "low",
+                                "User Story": "As a user, I expect the system to work well during high traffic.",
+                                "Acceptance Criteria": [
+                                  "System maintains basic functionality under load"
+                                ],
+                                "Common Bugs": [
+                                  "Server crashes under heavy usage"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "Software Type": "Middleware",
+                      "Requirements": {
+                        "Functional": [
+                          {
+                            "Feature Name": [
+                              "Push Notifications",
+                              "Real-Time Updates"
+                            ],
+                            "User Stories": [
+                              {
+                                "Quality": "high",
+                                "User Story": "As a user, I want to receive push notifications about my appointments so that I stay informed.",
+                                "Acceptance Criteria": [
+                                  "Push notifications work correctly",
+                                  "Notifications sent on time"
+                                ],
+                                "Common Bugs": [
+                                  "Push notifications not sent",
+                                  "Delayed notifications"
+                                ]
+                              },
+                              {
+                                "Quality": "average",
+                                "User Story": "As a user, I want notifications to be sent when there are updates to my schedule.",
+                                "Acceptance Criteria": [
+                                  "Notifications are sent for schedule changes",
+                                  "User receives timely updates"
+                                ],
+                                "Common Bugs": [
+                                  "Occasional notification delays",
+                                  "Failed push notification for rescheduled appointments"
+                                ]
+                              },
+                              {
+                                "Quality": "low",
+                                "User Story": "As a user, I want reminders about my appointments.",
+                                "Acceptance Criteria": [
+                                  "Reminders are sent for upcoming appointments"
+                                ],
+                                "Common Bugs": [
+                                  "Missed reminders",
+                                  "Notifications arrive late"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "Non-Functional": [
+                          {
+                            "Feature Name": [
+                              "Fast Processing",
+                              "Low Latency"
+                            ],
+                            "User Stories": [
+                              {
+                                "Quality": "high",
+                                "User Story": "As a user, I want the system to process requests quickly to avoid long wait times.",
+                                "Acceptance Criteria": [
+                                  "Processing speed meets performance benchmarks"
+                                ],
+                                "Common Bugs": [
+                                  "Slow data processing during peak times",
+                                  "Lag in notifications"
+                                ]
+                              },
+                              {
+                                "Quality": "average",
+                                "User Story": "As a user, I want the system to respond to my requests in a timely manner.",
+                                "Acceptance Criteria": [
+                                  "Request processing occurs within acceptable time limits"
+                                ],
+                                "Common Bugs": [
+                                  "Minor delays in processing during peak load"
+                                ]
+                              },
+                              {
+                                "Quality": "low",
+                                "User Story": "As a user, I want the system to respond promptly.",
+                                "Acceptance Criteria": [
+                                  "System response time is under acceptable threshold"
+                                ],
+                                "Common Bugs": [
+                                  "Significant delays during high traffic"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "Platform Name": "Web",
+                  "Software Types": [
+                    {
+                      "Software Type": "Frontend",
+                      "Requirements": {
+                        "Functional": [
+                          {
+                            "Feature Name": [
+                              "Doctor Search",
+                              "Health Record Management",
+                              "Appointment Scheduling"
+                            ],
+                            "User Stories": [
+                              {
+                                "Quality": "high",
+                                "User Story": "As a patient, I want to search for doctors by specialty to find the right care provider.",
+                                "Acceptance Criteria": [
+                                  "Search results are accurate",
+                                  "Filters work correctly"
+                                ],
+                                "Common Bugs": [
+                                  "Search results are inaccurate",
+                                  "Filter options do not update search results"
+                                ]
+                              },
+                              {
+                                "Quality": "average",
+                                "User Story": "As a patient, I want to quickly find doctors based on my specific needs.",
+                                "Acceptance Criteria": [
+                                  "Search results are relevant",
+                                  "Filters provide usable results"
+                                ],
+                                "Common Bugs": [
+                                  "Search results sometimes don’t match filter settings",
+                                  "Search takes longer on certain queries"
+                                ]
+                              },
+                              {
+                                "Quality": "low",
+                                "User Story": "As a user, I want an easy way to find doctors.",
+                                "Acceptance Criteria": [
+                                  "Search works with basic functionality"
+                                ],
+                                "Common Bugs": [
+                                  "Search function sometimes returns irrelevant results"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "Non-Functional": [
+                          {
+                            "Feature Name": [
+                              "System Uptime",
+                              "Real-Time Sync"
+                            ],
+                            "User Stories": [
+                              {
+                                "Quality": "high",
+                                "User Story": "As a user, I expect the web application to be available at all times with minimal downtime.",
+                                "Acceptance Criteria": [
+                                  "System uptime > 99.99%"
+                                ],
+                                "Common Bugs": [
+                                  "System crashes during peak hours",
+                                  "Sync issues between web and mobile"
+                                ]
+                              },
+                              {
+                                "Quality": "average",
+                                "User Story": "As a user, I want the application to be reliable and always available during working hours.",
+                                "Acceptance Criteria": [
+                                  "System uptime > 95% during peak hours"
+                                ],
+                                "Common Bugs": [
+                                  "Occasional downtime",
+                                  "Minor latency in real-time updates"
+                                ]
+                              },
+                              {
+                                "Quality": "low",
+                                "User Story": "As a user, I expect basic system availability.",
+                                "Acceptance Criteria": [
+                                  "System uptime is at a minimum threshold"
+                                ],
+                                "Common Bugs": [
+                                  "Frequent unavailability during peak hours"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "Software Type": "Backend",
+                      "Requirements": {
+                        "Functional": [
+                          {
+                            "Feature Name": [
+                              "Data Storage",
+                              "Real-Time Data Sync",
+                              "Appointment Management"
+                            ],
+                            "User Stories": [
+                              {
+                                "Quality": "high",
+                                "User Story": "As a patient, I want to store my health data securely and access it anytime.",
+                                "Acceptance Criteria": [
+                                  "Data is securely stored",
+                                  "User can access their data at any time"
+                                ],
+                                "Common Bugs": [
+                                  "Data is not being securely stored",
+                                  "Access times vary"
+                                ]
+                              },
+                              {
+                                "Quality": "average",
+                                "User Story": "As a patient, I want to update my health data when necessary.",
+                                "Acceptance Criteria": [
+                                  "Data can be updated by authorized users",
+                                  "Updates reflect in real time"
+                                ],
+                                "Common Bugs": [
+                                  "Update failures",
+                                  "Lag in data updates"
+                                ]
+                              },
+                              {
+                                "Quality": "low",
+                                "User Story": "As a user, I want to be able to access and update my information.",
+                                "Acceptance Criteria": [
+                                  "Users can view and modify data with basic functionality"
+                                ],
+                                "Common Bugs": [
+                                  "Occasional errors when saving data"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "Non-Functional": [
+                          {
+                            "Feature Name": [
+                              "Scalability",
+                              "Performance"
+                            ],
+                            "User Stories": [
+                              {
+                                "Quality": "high",
+                                "User Story": "As a user, I want the system to handle many requests without performance degradation.",
+                                "Acceptance Criteria": [
+                                  "System handles high load without issues"
+                                ],
+                                "Common Bugs": [
+                                  "Server overload during peak traffic",
+                                  "Performance issues during heavy usage"
+                                ]
+                              },
+                              {
+                                "Quality": "average",
+                                "User Story": "As a user, I want the system to work well during moderate load.",
+                                "Acceptance Criteria": [
+                                  "System performs well under moderate traffic"
+                                ],
+                                "Common Bugs": [
+                                  "Performance degrades slightly under moderate load"
+                                ]
+                              },
+                              {
+                                "Quality": "low",
+                                "User Story": "As a user, I want the system to work during periods of high traffic.",
+                                "Acceptance Criteria": [
+                                  "System can handle basic requests under load"
+                                ],
+                                "Common Bugs": [
+                                  "Lag during periods of heavy usage"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "Software Type": "Middleware",
+                      "Requirements": {
+                        "Functional": [
+                          {
+                            "Feature Name": [
+                              "Push Notifications",
+                              "Syncing Data"
+                            ],
+                            "User Stories": [
+                              {
+                                "Quality": "high",
+                                "User Story": "As a user, I want to receive notifications when my appointment is confirmed.",
+                                "Acceptance Criteria": [
+                                  "Push notifications sent correctly",
+                                  "User receives timely reminders"
+                                ],
+                                "Common Bugs": [
+                                  "Push notifications not working",
+                                  "Reminders missed"
+                                ]
+                              },
+                              {
+                                "Quality": "average",
+                                "User Story": "As a user, I want notifications about upcoming events.",
+                                "Acceptance Criteria": [
+                                  "Notifications sent for important events"
+                                ],
+                                "Common Bugs": [
+                                  "Delayed notifications"
+                                ]
+                              },
+                              {
+                                "Quality": "low",
+                                "User Story": "As a user, I want reminders about my appointments.",
+                                "Acceptance Criteria": [
+                                  "Reminders are sent for upcoming appointments"
+                                ],
+                                "Common Bugs": [
+                                  "Missed reminders"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "Non-Functional": [
+                          {
+                            "Feature Name": [
+                              "System Latency",
+                              "Performance"
+                            ],
+                            "User Stories": [
+                              {
+                                "Quality": "high",
+                                "User Story": "As a user, I want the system to handle all requests with low latency.",
+                                "Acceptance Criteria": [
+                                  "Request latency is minimal"
+                                ],
+                                "Common Bugs": [
+                                  "System freezes when processing high load"
+                                ]
+                              },
+                              {
+                                "Quality": "average",
+                                "User Story": "As a user, I want low latency for critical actions.",
+                                "Acceptance Criteria": [
+                                  "Critical actions should be processed quickly"
+                                ],
+                                "Common Bugs": [
+                                  "Noticeable delay for certain actions"
+                                ]
+                              },
+                              {
+                                "Quality": "low",
+                                "User Story": "As a user, I expect responsive system actions.",
+                                "Acceptance Criteria": [
+                                  "Basic system actions respond under 2 seconds"
+                                ],
+                                "Common Bugs": [
+                                  "Response delays during peak traffic"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
