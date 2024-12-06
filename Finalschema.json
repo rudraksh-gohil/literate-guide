@@ -1,0 +1,53 @@
+{
+  "Domain": "string",
+  "Subdomains": [
+    {
+      "Subdomain Name": "string",
+      "Regions": [
+        {
+          "Region Name": "string",
+          "Platforms": [
+            {
+              "Platform Name": "string",
+              "Software Types": [
+                {
+                  "Software Type Name": "string",
+                  "Requirements": {
+                    "Functional": [
+                      {
+                        "Feature Name": "string",
+                        "User Stories": [
+                          {
+                            "Quality": "string",
+                            "User Story": "string",
+                            "Acceptance Criteria": ["string"],
+                            "Common Bugs": ["string"],
+                            "App Names": ["string"]
+                          }
+                        ]
+                      }
+                    ],
+                    "Non-Functional": [
+                      {
+                        "Feature Name": "string",
+                        "User Stories": [
+                          {
+                            "Quality": "string",
+                            "User Story": "string",
+                            "Acceptance Criteria": ["string"],
+                            "Common Bugs": ["string"],
+                            "App Names": ["string"]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
